@@ -28,16 +28,4 @@ function fareTripler(fare) {
 }
 
  
-const returnFirstTwoDrivers = drivers => drivers.slice(0, 2);
 
-
-const returnLastTwoDrivers = drivers => drivers.slice(-2);
-
-
-const selectDifferentDrivers = (drivers, fn) => fn(drivers);
-
-
-const drivers = ['Antonia', 'Nuru', 'Amari', 'Mo'];
-
-console.log(selectDifferentDrivers(drivers, returnFirstTwoDrivers)); // ['Antonia', 'Nuru']
-console.log(selectDifferentDrivers(drivers, returnLastTwoDrivers));  // ['Amari', 'Mo']
